@@ -1,0 +1,54 @@
+.completed{
+    text-decoration-line: line-through;
+}
+input{
+    border: 1px solid grey;
+    width: 10rem;
+    color: black;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 4px;
+    font-family: monospace;
+    background-color: rgb(185, 219, 250)
+}
+
+.item{
+    background-color: rgb(189, 255, 249);
+    border: 1px solid grey;
+    width: 10rem;
+    color: black;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 4px;
+    font-family: monospace;
+}
+button{
+    background-color: aqua;
+    border: 1px solid grey;
+    width: 10rem;
+    color: black;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 4px;
+    font-family: monospace;
+
+}
+h1{
+        font-family: monospace;
+
+}
+
+html{
+    display: flex;
+    /* align-content: center; */
+    justify-content: center;
+}
+.form, .App, .todoList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
