@@ -1,5 +1,6 @@
 .completed{
     text-decoration-line: line-through;
+    background-color: rgb(253, 151, 125) !important;
 }
 input{
     border: 1px solid grey;
