@@ -3,8 +3,8 @@ import React from 'react';
 
 
 class TodoForm extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       item: ''
     };
@@ -18,21 +18,28 @@ class TodoForm extends React.Component {
 
   submitItem = e => {
     e.preventDefault();
+    this.setState({item: ''});
     this.props.addItem(this.state.item);
   };
 
   render() {
     return (
+      <>
       <form onSubmit={this.submitItem} className="form">
         <input
           type="text"
           placeholder="Enter Task"
-          value={this.item}
+          value={this.state.item}
           name="item"
           onChange={this.handleChanges}
         />
-        <button>Add</button>
+        <button type="submit">Add</button>
+        
       </form>
+      <button className="clear-btn" onClick={this.props.clearCompleted}>
+      Clear Completed
+  </button>
+  </>
     );
   }
 }
